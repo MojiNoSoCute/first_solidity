@@ -12,7 +12,11 @@ contract EasyBank {
         balances[msg.sender] += msg.value;
     }
 
-    function withdraw() public payable  {
-        balances[msg.sender] -= msg.value;
+    function withdraw(uint amount) public {
+        require(balances[msg.sender] >= amount, "Insuffient money to withdraw!!!");
+        // balances[msg.sender] -= amount;
+        balances[msg.sender] = balances[msg.sender] - amount;
+        (bool success, ) = msg.sender.call{value: amount}("");
+        require(success, "Withdraw failed!!");
     } 
 }

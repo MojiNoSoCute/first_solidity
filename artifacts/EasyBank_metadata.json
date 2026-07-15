@@ -45,10 +45,16 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
 				"name": "withdraw",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -80,11 +86,11 @@
 	},
 	"sources": {
 		"solid/EasyBank.sol": {
-			"keccak256": "0xe5e725cf97b086823497cfb1ea5716cee0b139dce770f2c6e5722fd8bce97f78",
+			"keccak256": "0xd75eb75f832e09a999a8d9b28867676cdb4fd601a18108336149256b7c176f67",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3b8ed7cfaffc7d0beb9d86f76364b097812caae44a8d42cc08302d65bca05b9f",
-				"dweb:/ipfs/QmahhByutyF6kTfJZTN5fR4BeAy2DCp5T8fX8RgBMM8tjR"
+				"bzz-raw://646a6451c700f428fffdd6e532335f0eb2b93109d45bf3cd59b45a5122bf4564",
+				"dweb:/ipfs/QmRrCnJ2yJ3vGCrp5sFKNxU59CweFH3xw2ait4JeyqgMTM"
 			]
 		}
 	},
